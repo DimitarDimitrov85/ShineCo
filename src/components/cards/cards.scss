@@ -1,0 +1,62 @@
+@import '../../_mixins';
+
+.cards-list {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 10px;
+    text-align: center;
+
+    .card {
+        width: 18rem;
+        display: inline-block !important; 
+        margin: 15px;
+        box-shadow: 5px 15px 15px rgb(214, 214, 214);
+        border: none !important;
+
+        @include for-phone {
+            width: 16rem;
+            height: 300px;
+        }
+
+        &:hover {
+            transition: box-shadow 0.3s ease-out;
+            box-shadow: 5px 15px 15px rgb(131, 131, 131);
+
+            @include for-phone {
+                box-shadow: 5px 15px 15px rgb(214, 214, 214);
+            }
+        }
+    
+        img {
+            width: 100%;
+            height: 200px;
+
+            @include for-phone {
+                height: 160px;
+            }
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        .title {
+            margin-top: -5px;
+            text-overflow: ellipsis; 
+            overflow: hidden; 
+            white-space: nowrap;
+            text-align: center;
+            font-family: myriad-pro-light;
+            font-weight: bold;
+        }
+
+        .add-to-cart {
+            margin-top: 50px;
+
+            .add-to-cart-btn {
+                @include button
+            }
+        }
+    }
+}
+

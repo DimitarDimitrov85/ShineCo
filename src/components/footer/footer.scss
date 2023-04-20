@@ -1,0 +1,55 @@
+@import '../../_mixins';
+
+footer {
+    background: black; 
+    height: 300px;
+
+    .contacts-info {
+        margin: auto;
+        margin-bottom: 20px;
+        margin-top: 60px;
+        width: 500px;
+        
+        @include for-phone {
+            margin: auto;
+            display: block !important;
+            width: 100%;
+            margin-top: 40px;
+
+        }
+
+        .contact {
+            width: 300px; 
+            margin: auto;
+        
+            p {
+                color: white;
+                margin-left: 13px
+            }
+        }
+
+        .social-media {
+            text-align: center;
+            width: 100%;
+            margin-bottom: 10px;
+
+            &--contact {
+                margin-right: 10px;
+                width: 35px;
+    
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .copyright {
+        margin-top: 60px;
+
+        @include for-phone {
+            margin-top: 50px;
+        }
+        
+    }
+}

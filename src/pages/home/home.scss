@@ -1,0 +1,60 @@
+@import '../../_mixins';
+
+.corosel-item {
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    height: 700px;
+
+    @include for-phone {
+        height: 200px;
+    }
+}
+
+.info {
+    background-image: url('../../../public/images/background/1_20.png');
+    background-repeat: none;
+    background-size: cover;
+    width: 50%;
+    margin: auto; 
+    margin-top: 10px;
+    text-align: center;
+
+    @include for-phone {
+        width: 95%;
+    }
+
+    .section-pics {
+        width: 600px;
+        margin: auto;
+        margin-bottom: 50px;
+
+        @include for-phone {
+            width: 95%;
+            margin-left: 2.5% !important;
+            margin-right: 0 !important;
+        }
+
+        h3 {
+            position: absolute;
+            color: rgb(204, 179, 39);
+            font-family: myriad-pro-regular;
+
+            @include for-phone {
+                position: relative;
+                margin-left: 0 !important;
+            }
+        }
+    }
+
+    p {
+        font-family: myriad-pro-light;
+        font-size: 1.1em;
+        padding: 0 10px 20px 10px;
+
+    }
+
+    h3 {
+        font-family: myriad-pro-regular;
+    }
+}

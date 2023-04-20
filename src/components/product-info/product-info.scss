@@ -1,0 +1,105 @@
+@import '../../_mixins';
+
+.product-info {
+    margin: auto;
+    margin-top: 50px; 
+    margin-bottom: 50px;
+    width: 70%;
+
+    @include for-phone {
+        width: 90%;
+        margin-top: 140px;
+    }
+
+    figure {
+        width: 100%;
+        background-repeat: no-repeat;
+
+        @include for-phone {
+            width: 100%;
+            margin: -30px 0 10px 10px;
+        }
+    
+        & img {
+            display: block;
+            width: 100%;
+            cursor: zoom-in;
+            transition: all 0.2s ease-in-out;
+        }
+    
+        &:hover img {
+            opacity: 0;
+
+            @include for-phone {
+                opacity: 1;
+            }
+        }
+    }
+
+    .product-description {
+        @include for-phone {
+            display: block !important;
+            width: 200%;
+            flex: none;
+        }
+
+        h3 {
+            font-family: myriad-pro-light;
+            font-weight: bold;
+        }
+
+        p {
+            font-family: myriad-pro-light;
+        }
+
+        h4 {
+            @include for-phone {
+                display: inline-block;
+                font-size: 2em;
+            }
+        }
+
+        .add-to-cart-btn {
+            @include button
+        }
+    }
+
+    .additional-pics-list{
+        display: none;
+
+        & > img {
+            width: 97px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+
+        @include for-phone {
+            display: block;
+            margin-left: 10px;
+        }
+    }
+
+    .additional-pic {
+        width: 100px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        transition: all 0.3s;
+
+        @include for-phone {
+            display: none;
+        }
+    
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+
+
+
+
+
+
+  
