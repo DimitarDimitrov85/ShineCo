@@ -16,12 +16,6 @@ export const Cards = ({ data }: any) => {
 
     const { activePage } = useSelector((state: any) => state.ui)
 
-    const addProduct = useCallback((pr: any, e: any) => {
-        e.stopPropagation()
-        addItem(pr)
-
-    },[addItem])
-
     useEffect(() => {
         Aos.init({duration: 1000, once: true})
         window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -44,7 +38,7 @@ export const Cards = ({ data }: any) => {
                         {/* {pr.text} */}
                         </Card.Text>
                         <div className='d-flex justify-content-between add-to-cart'>
-                            <Button className='btn-sm add-to-cart-btn' variant="outline-primary" onClick={(e) => addProduct(pr, e)} id={pr.id}>Добави в кошничката</Button>
+                            <Button className='btn-sm add-to-cart-btn' variant="outline-primary" onClick={() => addItem(pr)} id={pr.id}>Добави в кошничката</Button>
                             <span className='fw-bolder'>{pr.price}лв</span>
                         </div>
                     </Card.Body>
