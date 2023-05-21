@@ -3,7 +3,6 @@ import { Icon } from '../../components'
 
 import './footer.scss'
 
-
 export const Footer = () => {
     return (
         <footer>
@@ -37,19 +36,25 @@ export const Footer = () => {
                 </div>
                 <div className='social-media'>
                     <a href="https://www.facebook.com/Art.Resin.Coaster" rel="noreferrer" target="_blank">
-                        <img src="/images/facebook.png" alt=""  className="social-media--contact"/>
+                        <img src="/images/facebook.png" alt='ShineCo Facebook'  className="social-media--contact"/>
                     </a>
                     <a href=" https://www.instagram.com/_shineco_/" rel="noreferrer" target="_blank">
-                        <img src="/images/instagram.png" alt=""  className="social-media--contact"/>
+                        <img src="/images/instagram.png" alt='ShineCo Instagram' className="social-media--contact"/>
                     </a>
                     <a href="https://www.tiktok.com/@_shineco_" rel="noreferrer" target="_blank">
-                        <img src="/images/tiktok.png" alt=""  className="social-media--contact"/>
+                        <img src="/images/tiktok.png" alt='ShineCo Tiktok' className="social-media--contact"/>
                     </a>
                 </div>
             </div>
-            
+            <h4 className='text-center' style={{color: 'white'}}>Нaшите партньори</h4>
+            <div className='text-center d-flex justify-content-between contacts-info'>
+                <a href='https://www.lights-photography.com' rel="noreferrer" target='_blank' title='www.lights-photography.com'><img src='/images/light.png' alt='lights-photography' width={100}/></a>
+                <a href='https://www.pavaresine.bg' rel="noreferrer" target='_blank' title='www.pavaresine.bg'><img src='/images/PavaResine.png' alt='pavaresine' width={100}/></a>
+                <a href='https://www.astudio.bg' rel="noreferrer" target='_blank' title='www.astudio.bg'><img src='/images/AStudio.jpg' alt='astudio' width={100}/></a>
+            </div>
+
             <p className='text-center text-white copyright'>
-                Copyright &copy; Shine Corporation 2021
+                Copyright &copy; Shine Corporation 2023
             </p>
         </footer>
     )

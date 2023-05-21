@@ -48,7 +48,7 @@ export const NavBar = ( { onOrderPanelPosition, orderPanelPosition }: any) => {
                 <div />
                 <div />
             </div>
-            <Link to={'/?activePage=0'} id='0' onClick={onActive} className='brand'><img src='/images/ShineCO LOGO.png' alt=''/></Link>
+            <Link to={'/?activePage=0'} id='0' onClick={onActive} className='brand'><img src='/images/ShineCO LOGO.png' alt='ShineCo'/></Link>
             <Container>
                 <Nav className="me-auto" {...isShownMenu ? {style: {left: '0px'}} : {}}>
                     <div className='menu-title-for-phone' onClick={(e: any) => {e.stopPropagation()}}>

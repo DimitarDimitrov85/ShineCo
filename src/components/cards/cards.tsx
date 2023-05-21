@@ -31,7 +31,7 @@ export const Cards = ({ data }: any) => {
         <div className='cards-list'>
             { data.info.map((pr: any) => (
                 <Card className='card' key={pr.id} data-aos='zoom-in'>
-                    <Card.Img variant="top" src={pr.img} id={pr.id} data-name={pr.title} onClick={showProductInfo}></Card.Img>
+                    <Card.Img variant="top" src={pr.img} id={pr.id} data-name={pr.title} onClick={showProductInfo} alt={pr.title}></Card.Img>
                     <Card.Body>
                             <Card.Title className='title'>{pr.title}</Card.Title>
                         <Card.Text>

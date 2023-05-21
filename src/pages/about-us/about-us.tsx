@@ -15,7 +15,7 @@ export const AboutUs = () => {
                 <h2>За нас</h2>
                 <Row className='row'>
                     <Col>
-                        <img src="/images/Zanas.jpg" alt="" width={'80%'}/>
+                        <img src="/images/Zanas.jpg" alt='Михаела Димитрова' width={'80%'}/>
                     </Col>
                         
                     <Col className='text'>

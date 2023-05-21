@@ -48,12 +48,12 @@ export const ProductInfo = () => {
             <Row>
                 <Col style={{marginRight: '20px'}}>
                     <figure onMouseMove={handleMouseMove} style={{backgroundImage: `url(${selectedPicture || productData?.img})`, backgroundPosition: backgroundPosition}}>
-                        <img src={selectedPicture || productData?.img} alt="" />
+                        <img src={selectedPicture || productData?.img} alt={productData?.title} />
                     </figure>
                     <div className='additional-pics-list'>
                         {
                             productData?.allPics?.map((pic: any, index: any) => (
-                                <img src={pic} alt="" className='' onClick={() => {setSelectrdPicture(pic)}} key={index}/>
+                                <img src={pic} alt={productData?.title} className='' onClick={() => {setSelectrdPicture(pic)}} key={index}/>
                             ))
                         }
                     </div>
@@ -71,7 +71,7 @@ export const ProductInfo = () => {
                 <Col xs={6}>
                 {
                     productData?.allPics?.map((pic: any, index: any) => (
-                        <img src={pic} alt="" className='additional-pic' onClick={() => {setSelectrdPicture(pic)}} key={index}/>
+                        <img src={pic} alt={productData?.title} className='additional-pic' onClick={() => {setSelectrdPicture(pic)}} key={index}/>
                     ))
                 }
                 </Col>

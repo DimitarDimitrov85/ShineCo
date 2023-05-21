@@ -101,7 +101,7 @@ export const Cart = () => {
                         <button type="button" className="btn-close delete-for-fone" aria-label="Close" title='изтрий' onClick={() => removeItem(product.id)}></button>
                     </div>
                     <Col xs={3}>
-                        <img src={product.img} alt='pro' className='product-img'/>
+                        <img src={product.img} alt={product.title} className='product-img'/>
                     </Col>
 
                     <Col xs={4} className='my-auto'>

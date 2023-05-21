@@ -50,7 +50,7 @@ export const OrderPanel = ({ hidePanel, position}: any) => {
             <ListGroup  className='panel'>
                 {isEmpty ? <p style={{textAlign: 'center'}}>Кошничката е празна</p> :  items.map((product: any, index: any) => (
                     <ListGroup.Item className='item' key={index}>
-                        <Image src={product.img} alt='' width='80px' height='65px'/>
+                        <Image src={product.img} alt={product.title} width='80px' height='65px'/>
                         <div style={{textAlign: 'center'}}>
                             <p className='title'>{product.title}</p>
                             <p>{product.quantity} x {product.price}лв</p>

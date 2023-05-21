@@ -9,13 +9,7 @@ import 'aos/dist/aos.css'
 
 import './home.scss'
 
-const Img = ({ src }: any) => {
-    return (
-        <img src={`/images/${src}`} alt="" width={'80%'}/>
-    )
-}
-
-const SectionPictures = ( { imgData, urlPath, align, title, showing, id }: any) => {
+const SectionPictures = ( { img, urlPath, align, title, showing, id }: any) => {
     const dispatch = useDispatch()
 
     const onActive = useCallback((e: any) => {
@@ -26,7 +20,7 @@ const SectionPictures = ( { imgData, urlPath, align, title, showing, id }: any) 
         <div className='section-pics' style={{[align]: '0px'}}  data-aos={showing}>
             <h3 style={{marginLeft: `${title.position}%`}}>{title.value}</h3>
             <Link to={`/${urlPath}`} onClick={onActive} id={id}>
-                <Img src={imgData} key={imgData}/>
+                <img src={`/images/${img}`} alt={title.value} width={'80%'}/>
             </Link>
         </div>
     )
@@ -85,12 +79,12 @@ export const Home = () => {
                         Връзката с клиентите е специална за нас!
                         Нaшата цел е клиентът да остане доволен от качеството, избора и обслужването.
                     </p>
-                    <SectionPictures imgData={data.home.clocks} urlPath='product-clocks?activePage=3' align='marginRight' title={{value: 'Часовници', position: '-20'}} showing='zoom-in' id='3'/>
-                    <SectionPictures imgData={data.home.pads} urlPath='product-pads?activePage=1' align='marginLeft' title={{value: 'Подложки', position: '97'}} showing='zoom-in-up' id='1'/>
-                    <SectionPictures imgData={data.home.tables} urlPath='product-tables?activePage=5' align='marginRight' title={{value: 'Маси', position: '-8'}} showing='zoom-in-down' id='5'/>
-                    <SectionPictures imgData={data.home.fruitBowls} urlPath='product-fruitBowls?activePage=4'align='marginLeft' title={{value: 'Фруктиери', position: '97'}} showing='zoom-in-left' id='4'/>
-                    <SectionPictures imgData={data.home.salvers} urlPath='product-salver?activePage=2' align='marginRight' title={{value: 'Подноси', position: '-15'}} showing='zoom-in-right' id='2'/>
-                    <SectionPictures imgData={data.home.others} urlPath='other-product?activePage=6' align='marginLeft' title={{value: 'Други', position: '97'}} showing='zoom-in-right' id='6'/>
+                    <SectionPictures img={data.home.clocks} urlPath='product-clocks?activePage=3' align='marginRight' title={{value: 'Часовници', position: '-20'}} showing='zoom-in' id='3'/>
+                    <SectionPictures img={data.home.pads} urlPath='product-pads?activePage=1' align='marginLeft' title={{value: 'Подложки', position: '97'}} showing='zoom-in-up' id='1'/>
+                    <SectionPictures img={data.home.tables} urlPath='product-tables?activePage=5' align='marginRight' title={{value: 'Маси', position: '-8'}} showing='zoom-in-down' id='5'/>
+                    <SectionPictures img={data.home.fruitBowls} urlPath='product-fruitBowls?activePage=4'align='marginLeft' title={{value: 'Фруктиери', position: '97'}} showing='zoom-in-left' id='4'/>
+                    <SectionPictures img={data.home.salvers} urlPath='product-salver?activePage=2' align='marginRight' title={{value: 'Подноси', position: '-15'}} showing='zoom-in-right' id='2'/>
+                    <SectionPictures img={data.home.others} urlPath='other-product?activePage=6' align='marginLeft' title={{value: 'Други', position: '97'}} showing='zoom-in-right' id='6'/>
                     <video src='/images/Coaster.mp4' width='90%' height='100%' controls poster='/images/_SDS5930.jpg'></video>
             </div>
         </div>
