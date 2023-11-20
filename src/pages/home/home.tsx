@@ -37,6 +37,18 @@ export const Home = () => {
         <div>
             <Carousel fade pause={false} controls={false} indicators={false} >
                 <Carousel.Item>
+                    <div className='corosel-item' style={{backgroundImage: 'url(/images/shinecoChristmas.jpg)'}} />
+                </Carousel.Item>
+
+                <Carousel.Item>
+                    <div className='corosel-item' style={{backgroundImage: 'url(/images/coverchisrtmas2.jpg)'}} />
+                </Carousel.Item>
+
+                <Carousel.Item>
+                    <div  className='corosel-item' style={{backgroundImage: 'url(/images/coverchisrmas.jpg)'}} />
+                </Carousel.Item>
+
+                <Carousel.Item>
                     <div className='corosel-item' style={{backgroundImage: 'url(/images/A7200156-2webcover.jpg)'}} />
                 </Carousel.Item>
 

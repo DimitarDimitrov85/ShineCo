@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import { setCardInfo, setDiscountInfo, setActivePage } from './slices/uiSlice'
 import { Pads, Salvers, Clocks, FruitBowls, Tables, OtherArticuls, Cart, Home, AboutUs } from './pages'
 import { Routes, Route, useLocation } from 'react-router-dom'
-import { ProductInfo, OrderPanel, CompleteOrder, Footer, NavBar } from './components'
+import { ProductInfo, OrderPanel, CompleteOrder, Footer, NavBar, Christmas } from './components'
 import { data } from './data'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -69,6 +69,8 @@ const App = () => {
 
     return (
             <div>
+                <Christmas />
+                
                 <NavBar orderPanelPosition={position} onOrderPanelPosition={onOrderPanelPosition}/>
                 
                 <OrderPanel hidePanel={onOrderPanelPosition} position={position}/>
