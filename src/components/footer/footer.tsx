@@ -4,6 +4,8 @@ import { Icon } from '../../components'
 import './footer.scss'
 
 export const Footer = () => {
+    const date = new Date()
+    
     return (
         <footer>
             <h4 className='text-center text-white'>Контакти</h4>
@@ -54,7 +56,7 @@ export const Footer = () => {
             </div>
 
             <p className='text-center text-white copyright'>
-                Copyright &copy; Shine Corporation 2023
+                Copyright &copy; Shine Corporation {date.getFullYear()}
             </p>
         </footer>
     )

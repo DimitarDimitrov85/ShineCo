@@ -37,43 +37,43 @@ export const Home = () => {
         <div>
             <Carousel fade pause={false} controls={false} indicators={false} >
                 <Carousel.Item>
-                    <div className='corosel-item' style={{backgroundImage: 'url(/images/shinecoChristmas.jpg)'}} />
+                    <img src={`/images/A7101931Ch.jpg`} alt='x-mas' className='corosel-item'/>
                 </Carousel.Item>
 
                 <Carousel.Item>
-                    <div className='corosel-item' style={{backgroundImage: 'url(/images/coverchisrtmas2.jpg)'}} />
+                    <img src={`/images/A7101913w.jpg`} alt='x-mas' className='corosel-item'/>
                 </Carousel.Item>
 
                 <Carousel.Item>
-                    <div  className='corosel-item' style={{backgroundImage: 'url(/images/coverchisrmas.jpg)'}} />
+                    <img src={`/images/A7200156-2webcover.jpg`} alt='table' className='corosel-item'/>
                 </Carousel.Item>
 
                 <Carousel.Item>
-                    <div className='corosel-item' style={{backgroundImage: 'url(/images/A7200156-2webcover.jpg)'}} />
+                    <img src={`/images/A7201368webcover.jpg`} alt='salver' className='corosel-item'/>
                 </Carousel.Item>
 
                 <Carousel.Item>
-                    <div className='corosel-item' style={{backgroundImage: 'url(/images/A7201368webcover.jpg)'}} />
+                    <img src={`/images/26_n.png`} alt='pad' className='corosel-item'/>
                 </Carousel.Item>
 
                 <Carousel.Item>
-                    <div  className='corosel-item' style={{backgroundImage: 'url(/images/26_n.png)'}} />
+                    <img src={`/images/A7205349coverweb.jpg`} alt='pad' className='corosel-item'/>
                 </Carousel.Item>
 
                 <Carousel.Item>
-                    <div className='corosel-item' style={{backgroundImage: 'url(/images/A7205349coverweb.jpg)'}} />
+                    <img src={`/images/A7205437cover1.jpg`} alt='salver' className='corosel-item'/>
                 </Carousel.Item>
 
                 <Carousel.Item>
-                    <div className='corosel-item' style={{backgroundImage: 'url(/images/A7205437cover1.jpg)'}} />
-                </Carousel.Item>
-
-                <Carousel.Item>
-                    <div  className='corosel-item' style={{backgroundImage: 'url(/images/A7209396cover9a.jpg)'}} />
+                    <img src={`/images/A7209396cover9a.jpg`} alt='salver' className='corosel-item'/>
                 </Carousel.Item>
             </Carousel>
             <div className='info' >
+                <h3>КУПИ С КАУЗА!</h3>
                 <h3>Безплатна доставка за поръчки над 200лв.</h3>
+                <h3>Печат с вашето лого или име се заплаща допълнително +20лв.</h3>
+                <h3>При желание от ваша страна, можем да опаковаме и персонализираме опаковачната кутия на артикула, така, че да е готов за подаряване, с допълнително заплащане от 10лв!</h3>
+                <h3>След направен преглед и заплащане на поръчан от Вас артикул, стоката не ПОДЛЕЖИ на връщане!</h3>
                     <p> 
                         Добре дошли в света на елегантността, стила и качеството в ShineCo.
                         ShineCo. е онлайн магазин за артикули от епоксидна смола. 
