@@ -69,7 +69,7 @@ const App = () => {
 
     return (
             <div>
-                <Christmas />
+                {/* <Christmas /> */}
                 
                 <NavBar orderPanelPosition={position} onOrderPanelPosition={onOrderPanelPosition}/>
                 

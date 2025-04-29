@@ -36,13 +36,13 @@ export const Home = () => {
     return (
         <div>
             <Carousel fade pause={false} controls={false} indicators={false} >
-                <Carousel.Item>
-                    <img src={`/images/A7101931Ch.jpg`} alt='x-mas' className='corosel-item'/>
-                </Carousel.Item>
+                {/* <Carousel.Item>
+                    <img src={`/images/Baner-8-Marth.jpg`} alt='x-mas' className='corosel-item'/>
+                </Carousel.Item> */}
 
-                <Carousel.Item>
-                    <img src={`/images/A7101913w.jpg`} alt='x-mas' className='corosel-item'/>
-                </Carousel.Item>
+                {/* <Carousel.Item>
+                    <img src={`/images/Baner-8-Marth1.jpg`} alt='x-mas' className='corosel-item'/>
+                </Carousel.Item> */}
 
                 <Carousel.Item>
                     <img src={`/images/A7200156-2webcover.jpg`} alt='table' className='corosel-item'/>
@@ -69,7 +69,7 @@ export const Home = () => {
                 </Carousel.Item>
             </Carousel>
             <div className='info' >
-                <h3>КУПИ С КАУЗА!</h3>
+                <h3>БРАНД С КАУЗА ЗА ДЕЦА В НУЖДА!</h3>
                 <h3>Безплатна доставка за поръчки над 200лв.</h3>
                 <h3>Печат с вашето лого или име се заплаща допълнително +20лв.</h3>
                 <h3>При желание от ваша страна, можем да опаковаме и персонализираме опаковачната кутия на артикула, така, че да е готов за подаряване, с допълнително заплащане от 10лв!</h3>
